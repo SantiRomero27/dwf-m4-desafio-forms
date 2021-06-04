@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles.css" />
+        <title>Desafío: Forms</title>
+        <script defer src="./index.js"></script>
+    </head>
+    <body>
+        <form class="el-form">
+            <!-- El nombre -->
+            <section class="seccion seccion-nombre">
+                <label for="nombre">Nombre</label>
+                <input id="nombre" name="nombre" type="text" />
+            </section>
+
+            <!-- Seleccion de gustos -->
+            <section class="seccion seccion-gustos">
+                <label for="gustos"
+                    >De lo aprendido hasta ahora, ¿qué tema te gustó más?</label
+                >
+                <select name="gustos" id="gustos">
+                    <option value="clases">Clases</option>
+                    <option value="html y css">HTML y CSS</option>
+                    <option value="javascript">Javascript</option>
+                </select>
+            </section>
+
+            <!-- Preferencias de estudio -->
+            <section class="seccion seccion-hora">
+                <p class="par-hora-estudio">Preferís estudiar</p>
+                <div class="contenedor-hora-estudios">
+                    <input type="radio" name="hora" id="estudio1" value="dia" />
+                    <label for="estudio1">De día</label>
+                    <input
+                        type="radio"
+                        name="hora"
+                        id="estudio2"
+                        value="noche"
+                    />
+                    <label for="estudio2">De noche</label>
+                </div>
+            </section>
+
+            <!-- Selección de temas -->
+            <section class="seccion seccion-temas">
+                <p class="par-temas">
+                    ¿Cuales fueron los temas más complejos hasta ahora?
+                </p>
+                <div class="contenedor-opciones-temas">
+                    <div class="opcion-tema">
+                        <input
+                            type="checkbox"
+                            name="tema"
+                            id="tema1"
+                            value="typescript"
+                        />
+                        <label for="tema1">Typescript</label>
+                    </div>
+                    <div class="opcion-tema">
+                        <input
+                            type="checkbox"
+                            name="tema"
+                            id="tema2"
+                            value="promesas"
+                        />
+                        <label for="tema2">Promesas</label>
+                    </div>
+                    <div class="opcion-tema">
+                        <input
+                            type="checkbox"
+                            name="tema"
+                            id="tema3"
+                            value="clases"
+                        />
+                        <label for="tema3">Clases</label>
+                    </div>
+                    <div class="opcion-tema">
+                        <input
+                            type="checkbox"
+                            name="tema"
+                            id="tema4"
+                            value="funciones"
+                        />
+                        <label for="tema4">Funciones</label>
+                    </div>
+                </div>
+            </section>
+            <button class="boton-enviar" type="submit">Enviar</button>
+        </form>
+    </body>
+</html>

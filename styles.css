@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+}
+
+.el-form {
+    font-family: "Roboto";
+
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 35px 55px;
+    border: solid cornflowerblue;
+    box-shadow: 10px 5px 16px -6px rgba(0, 0, 0, 0.2);
+}
+
+.seccion-nombre {
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion-gustos {
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion-nombre label,
+.seccion-gustos label {
+    margin-bottom: 10px;
+}
+
+.seccion-nombre input,
+.seccion-gustos select {
+    width: 65%;
+    height: 37px;
+}
+
+.seccion {
+    margin-bottom: 30px;
+}
+
+.boton-enviar {
+    width: 45%;
+    height: 58px;
+
+    border-style: solid;
+    transition: background-color 250ms ease;
+}
+
+.boton-enviar:hover {
+    background-color: rgb(190, 190, 252);
+    transition: background-color 250ms ease;
+    border-style: hidden;
+}
